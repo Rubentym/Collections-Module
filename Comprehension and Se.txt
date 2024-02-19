@@ -1,0 +1,9 @@
+def count_trees(forest):
+    unique_trees = set(forest)
+    tree_counts = {tree: forest.count(tree) for tree in unique_trees}
+    return tree_counts
+
+# Example usage:
+forest = ["oak", "pine", "oak", "maple", "birch", "oak"]
+tree_counts = count_trees(forest)
+print("Tree counts in the forest:", tree_counts)
